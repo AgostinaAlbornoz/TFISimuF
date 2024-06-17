@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>Simulador AZA acero sostenible</title>
+        <!-- Required meta tags -->
+        <meta charset="utf-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, shrink-to-fit=no"
+        />
+
+        <!-- Bootstrap CSS v5.2.1 -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+            crossorigin="anonymous"
+        />
+        <link rel="stylesheet" href="./style.css">
+    </head>
+
+    <body>
+        <main>
+            <div class="row d-flex justify-content-center" >
+                <div class="col" id="container2">
+                    <div class="container row d-flex justify-content-center">
+                        <div class="input-group mb-3 mt-3 row d-flex justify-content-evenly">
+                            <select class="form-select form-select-sm col-6" aria-label=".form-select-lg example" id="select-informes">
+                                <option selected value="0">Seleccionar día</option>
+                            </select>
+                            <button type="button" class="btn btn-dark col-2 mx-1 d-flex justify-content-center" id="btn-simular">
+                                Simular
+                                <div class="loader-container hidden" id="loader-container">
+                                    <div class="loader"></div>
+                                    <div class="loader-2"></div>
+                                </div>
+                            </button>
+                            <button type="button" class="btn btn-dark col-2 mx-1" id="mostrar-informes">Mostrar</button>
+                        </div>
+                    </div>
+                    <div class="row w-75">
+                        <form action="" class="d-flex justify-content-evenly mb-2">
+                            <div>
+                                <label for="input-cantidad-camiones">Cantidad de Camiones promedio</label>
+                                <input type="number" name="" id="input-cantidad-camiones" placeholder="Cantidad de Camiones" min="1">
+                            </div>
+                            <div>
+                                <label for="input-objetivo">Objetivo a fijar (Toneladas)</label>
+                                <input type="number" name="" id="input-objetivo" placeholder="Objetivo" min="1">
+                            </div>
+                        </form>
+                    </div>
+                    <div class="card-container row d-flex justify-content-center" id="card-cont">
+                        <div class="row w-50 d-flex justify-content-center" id="div-card-container"></div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <!-- Bootstrap JavaScript Libraries -->
+        <script
+            src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+            integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+            crossorigin="anonymous"
+        ></script>
+
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+            integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+            crossorigin="anonymous"
+        ></script>
+        <script src="./index.js"></script>
+        <!-- <script src="./animaciones.js"></script> -->
+    </body>
+</html>

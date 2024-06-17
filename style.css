@@ -1,0 +1,125 @@
+body {
+    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    background-color: #1e1f1c;
+    overflow: hidden;
+}
+
+label {
+    color: white;
+}
+
+#card-cont {
+    height: 550px;
+    /*background-color: #1e1f1c; */
+    overflow-y: scroll;
+    overflow-x: hidden;
+    /*display: flex;
+    justify-content: center; */
+}
+
+#card-cont::-webkit-scrollbar {
+    width: 20px; /* Ancho de la barra de desplazamiento */
+}
+
+#card-cont::-webkit-scrollbar-track {
+    background: #e0e0e0; /* Color de fondo de la pista */
+}
+
+#card-cont::-webkit-scrollbar-thumb {
+    background-color: #888; /* Color de la barra de desplazamiento */
+    border-radius: 10px; /* Redondea los bordes */
+    border: 3px solid #e0e0e0; /* Espacio alrededor de la barra */
+}
+
+.estilo-card {
+    height: 250px;
+    width: 360px;
+    border: inset 5px #82ba26;
+}
+
+.estilo-card-mes {
+    height: 400px;
+    width: 400px;
+}
+
+.estilo-card-header {
+    color: white;
+    margin-top: -10px;
+    margin-left: -18px;
+    height: 120px;
+    width: 370px;
+    background: rgb(0,80,160);
+    background: linear-gradient(165deg, rgba(0,80,160,1) 55%, rgba(0,37,91,1) 100%);
+    box-shadow: 3px 14px 21px 0px rgba(0,0,0,0.59);
+    -webkit-box-shadow: 3px 14px 21px 0px rgba(0,0,0,0.59);
+    -moz-box-shadow: 3px 14px 21px 0px rgba(0,0,0,0.59);
+}
+
+.estilo-card-header-mensual {
+    color: white;
+    padding-top: 20px;
+    margin-top: -10px;
+    margin-left: -18px;
+    height: 100px;
+    width: 410px;
+    background: rgb(0,80,160);
+    background: linear-gradient(165deg, rgba(0,80,160,1) 55%, rgba(0,37,91,1) 100%);
+    box-shadow: 3px 14px 21px 0px rgba(0,0,0,0.59);
+    -webkit-box-shadow: 3px 14px 21px 0px rgba(0,0,0,0.59);
+    -moz-box-shadow: 3px 14px 21px 0px rgba(0,0,0,0.59);
+}
+
+.loader-container {
+    position: relative;
+    width: 20px;
+    height: 20px;
+    margin-left: 7px;
+}
+
+.loader-container .loader{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    border: solid 4px transparent;
+    border-top-color: rgba(0,80,160,1);
+    border-left-color: rgba(0,80,160,1);
+    border-radius: 50%;
+    animation: loader 1.2s linear infinite; 
+}
+
+.loader-container .loader-2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 70%;
+    height: 70%;
+    border: solid 4px transparent;
+    border-top-color: #82ba26;
+    border-left-color: #82ba26;
+    border-radius: 50%;
+    animation: loader2 1.2s linear infinite;
+}
+
+.hidden {
+    display: none;
+}
+
+@keyframes loader {
+    0% {
+        transform: translate(-50% , -50%) rotate(0deg);
+    }
+    100% {
+        transform: translate(-50% , -50%) rotate(360deg);
+    }
+}
+
+@keyframes loader2 {
+    0% {
+        transform: translate(-50% , -50%) rotate(0deg);
+    }
+    100% {
+        transform: translate(-50% , -50%) rotate(-360deg);
+    }
+}
